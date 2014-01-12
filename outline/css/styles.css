@@ -1,9 +1,9 @@
 body {
 	background-color: #333;
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
 }
-
-div.header {
+div.landing-header {
 	width: 100%;
 	height: 515px;
 	background-image: url('../images/header.jpg');
@@ -14,10 +14,18 @@ div.header {
 	color: #fff;
 	text-align: center;
 }
-div.header h1{
+div.landing-header h1{
 	text-shadow: 4px 4px 5px #000;
 	position: relative;
 	top: 310px;
+}
+div.header {
+	color: #fff;
+	text-align: center;
+}
+div.header h1 {
+	font-weight: 200;
+	font-size: 50px;
 }
 nav.navbar {
 	background-color: #fff;
@@ -28,15 +36,35 @@ nav.navbar {
 	margin: 0;
 	font-style: bold;
 }
+.active,
+a,
 nav.navbar .nav > .active > a {
 	color: #8baa43;
+}
+a:hover, a:focus {
+	color: #607829;
+}
+div.active {
+	background-color: #8baa43;
+	color: #fff;
+	min-height: 130px;
+}
+a.thumbnail:hover, a.thumbnail:focus {
+	border-color: #8baa43;
 }
 nav.navbar .nav > li > a {
 	color: #777;
 }
-.content {
+.content, .landing-content {
 	background-color: #e9e9e9;
+}
+.landing-content {
 	padding: 30px 0;
+}
+.content > .container {
+	background-color: #fff;
+	padding: 30px 40px;
+	color: #555;
 }
 .mission {
 	//border-top: 2px solid #ccc;
@@ -48,17 +76,26 @@ nav.navbar .nav > li > a {
 .mission h1 {
 	text-align: center;
 }
-.action {
+.landing-action {
 	border: 2px solid #ddd;
+	box-shadow: 0px 0px 5px #ccc;
+}
+.action {
 	padding: 0;
 	background-color: #fff;
-	box-shadow: 0px 0px 5px #ccc;
 }
 .action > li {
 	display: inline-block;
 	padding: 3em 4.5%;
 	vertical-align: top;
 	text-align: center;
+	//border-top: 1px solid #ddd;
+}
+.action > li.left {
+	border-right: 1px solid #ddd;
+}
+.action > li.right {
+	border-left: 1px solid #ddd;
 }
 .action > li.middle {
 	border-right: 1px solid #ddd;
@@ -66,4 +103,46 @@ nav.navbar .nav > li > a {
 }
 .action > li > img{
 	width: 100px;
+}
+
+
+.btn-ryerson {
+  color: #ffffff;
+  background-color: #8baa43;
+  border-color: #7f9e36;
+}
+
+.btn-ryerson:hover,
+.btn-ryerson:focus,
+.btn-ryerson:active,
+.btn-ryerson.active,
+.open .dropdown-toggle.btn-ryerson {
+  color: #ffffff;
+  background-color: #759131;
+  border-color: #586e25;
+}
+
+.btn-ryerson:active,
+.btn-ryerson.active,
+.open .dropdown-toggle.btn-ryerson {
+  background-image: none;
+}
+
+.btn-ryerson.disabled,
+.btn-ryerson[disabled],
+fieldset[disabled] .btn-ryerson,
+.btn-ryerson.disabled:hover,
+.btn-ryerson[disabled]:hover,
+fieldset[disabled] .btn-ryerson:hover,
+.btn-ryerson.disabled:focus,
+.btn-ryerson[disabled]:focus,
+fieldset[disabled] .btn-ryerson:focus,
+.btn-ryerson.disabled:active,
+.btn-ryerson[disabled]:active,
+fieldset[disabled] .btn-ryerson:active,
+.btn-ryerson.disabled.active,
+.btn-ryerson[disabled].active,
+fieldset[disabled] .btn-ryerson.active {
+  background-color: #8baa43;
+  border-color: #7f9e36;
 }
